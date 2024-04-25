@@ -1,0 +1,25 @@
+{
+    "form1": {
+        "message": "Appointment made successfully!",
+        "messageError": "Appointment failed"
+    },
+    "form2": {
+        "message": "The account is in the database.",
+        "messageError": "The account is not in the database."
+    },
+    "formtr": {
+        "message": "Order made successfully!<div class='MESSAGE '><h3>name: $nametr</h3><h3>ID: $numbertr</h3><h3>mony: +$$numbertr2</h3><h3>DATE: $datetimetr</h3></div>",
+        "messageError1": "Failed to update bank account",
+        "messageError2": "User does not exist in the database"
+    },
+    "formds": {
+        "message": "Deposit made successfully!<div class='MESSAGE '><h3>name: $nameds</h3><h3>ID: $numberds</h3><h3>mony: +$$numberds2</h3><h3>DATE: $datetimeds</h3></div>",
+        "messageError1": "Failed to update bank account",
+        "messageError2": "User does not exist in the database"
+    },
+    "formaw": {
+        "message": "Withdrawal made successfully!<div class='MESSAGE '><h3>name: $nameaw</h3><h3>password: $password</h3><h3>ID: $numberaw</h3><h3>mony: -$$numberaw2</h3><h3>DATE: $datetimeaw</h3></div>",
+        "messageError1": "Insufficient balance in the account",
+        "messageError2": "User does not exist in the database"
+    }
+}

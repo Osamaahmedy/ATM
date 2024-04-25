@@ -1,0 +1,59 @@
+{
+
+    "$schema1": {
+        "form1.php": {
+            "form1.nurmal": "Appointment made successfully!",
+            "form1.error": "Appointment failed"
+        },
+
+        "form1.html": "create account,username,password,id,email,date"
+
+    },
+    "$schema2": {
+        "form2.php": {
+            "form2.nurmal": "The account is in the database.",
+            "form2.error": "the account is not in the database."
+        },
+
+        "form2.html": "log in,username,password,id,email,date"
+
+    },
+
+    "$schema3": {
+        "form3.php": {
+            "form3.nurmal": "Order made successfully! <div class='MESSAGE '> <H3>name: $nametr</H3> <H3>ID: $numbertr</H3> <H3>mony: +$$numbertr2 </H3> <H3> DATE: $datetimetr</H3></div>",
+
+            "form3.error": "Failed to insert data into datatr table",
+            "form3.nurmal.chek": "The account is in the database.",
+            "form3.error.chek": "The account is not in the database."
+        },
+
+        "form3.html": " make your order,username,password,id,email,date"
+
+    },
+    "$schema4": {
+        "form4.php": {
+            "form4.nurmal": "Deposit made successfully! <div class='MESSAGE '> <p>name: $nameds</p> <p>ID: $numberds</p> <p>How money you had in your bank account $$currentBalance </p> <p>amount added to your bank account + $$numberds2</p> <p>How much money is in your bank account: $$remainingBalance</p> <p> DATE: $datetimeds</p> </div>",
+
+            "form4.error": "Failed to update bank account",
+            "form4.nurmal.chek": "",
+            "form4.error.chek": "User does not exist in the database"
+        },
+
+        "form4.html": " make your desposit,username,password,id,email,date"
+
+    },
+
+    "$schema5": {
+        "form5.php": {
+            "form5.nurmal": "Withdrawal made successfully!<div class='MESSAGEaw '> <p>Name: $nameaw</p> <p>ID: $numberaw</p> <p>How money you had in your bank account $$currentBalance </p> <p>money withdrawn from your bank account - $$numberaw2</p> <p>How much money is in your bank account $$remainingBalance</p> <p>Date: $datetimeaw</p> </div>",
+
+            "form5.error": "Failed to update bank account",
+            "form5.nurmal.chek": "Insufficient balance in the account",
+            "form5.error.chek": "User does not exist in the database"
+        },
+        "form5.html": "  make your withdraw ,username,password,id,email,date"
+
+    }
+
+}

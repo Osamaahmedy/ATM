@@ -1,0 +1,379 @@
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+    box-sizing: border-box;
+    transition: .5s .1s all ease;
+    transform-style: preserve-3d;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #ededed;
+    color: black;
+}
+
+input {
+    text-transform: capitalize;
+}
+
+:root {
+    --back-color: #a97fff;
+    --body--color: ;
+}
+
+header {
+    text-transform: uppercase;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 4rem;
+    width: 100%;
+    background-color: var(--back-color);
+}
+
+section {
+    border-radius: 5px;
+    background-color: var(--back-color);
+    height: 25rem;
+    width: 75%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "rigth " "lift";
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: translateY(30px);
+    box-shadow: 3px 3px 1px 0px black;
+}
+
+header h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    text-shadow: 3px 3px 1px #ededed;
+}
+
+header h3::after {
+    content: "|";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    color: wheat;
+    transform: translate(10px, -2px);
+}
+
+body {
+    background-color: #ededed;
+}
+
+.form1 {
+    grid-area: rigth;
+}
+
+form {
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+    height: 93%;
+}
+
+input:focus {
+    border-color: wheat;
+}
+
+h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+input {
+    height: 2rem;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    width: 15rem;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px black;
+}
+
+input.btn {
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+}
+
+.cover.cover.visible {
+    position: absolute;
+    text-align: center;
+    border-radius: 0% 50% 0 50%;
+    background-color: #ededed;
+    transform: translatex(111%);
+    /* Initially hide the cover element */
+}
+
+.cover {
+    position: absolute;
+    height: 95%;
+    width: 47%;
+    text-align: center;
+    border-radius: 50% 0% 50% 0%;
+    background-color: #ededed;
+    transform: translateX(3%);
+}
+
+.add {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    border-radius: 2px;
+    transform: translate(308px, 247px);
+}
+
+.add.visible {
+    background-color: #ff7fd3;
+}
+
+.remove {
+    cursor: pointer;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background-color: #ff7fd3;
+    border-radius: 2px;
+    transform: translate(308px, 247px);
+}
+
+.remove.visible {
+    background-color: #ff7fd3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "left" "rigth";
+}
+
+.logabout {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 50%);
+    grid-row: left;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logabout h2 {
+    text-transform: uppercase;
+    position: relative;
+    transform: translate3d(99px, 5px, 11px);
+    font-size: 61px;
+    text-shadow: 6px 5px 1px #ededed;
+}
+
+h2.c {
+    text-shadow: 3px 4px 1px #ededed;
+}
+
+.logabout h2::after {
+    content: "|";
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    color: wheat;
+    transform: translate(11px, -6px);
+    text-shadow: 3px 3px 1px #ededed;
+}
+
+h3,
+h2,
+h1 {
+    text-transform: uppercase;
+}
+
+.logabout p {
+    text-align: center;
+    transform: translate(-1px, 6px);
+}
+
+.transbout {
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    grid-auto-columns: 100%;
+    text-align: center;
+}
+
+.transbout h2 {
+    text-shadow: 3px 3px 1px #ededed;
+}
+
+
+/*//////////////// */
+
+.pay1 {
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+    height: 77%;
+}
+
+section {
+    height: 29rem;
+    margin: 132px auto;
+}
+
+form {
+    height: 87%;
+}
+
+input.down {
+    transform: translateY(18px);
+}
+
+.MESSAGE {
+    height: 20rem;
+    width: 23rem;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+    position: absolute;
+    transform: translate(30rem, 20%) scaleX(0);
+    opacity: 0;
+    animation: identifier 1s forwards;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 16.6%);
+    box-shadow: 3px 3px 1px 0px black;
+}
+
+.MESSAGEaw {
+    height: 22rem;
+    width: 23rem;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+    position: absolute;
+    transform: translate(30rem, 20%) scaleX(0);
+    opacity: 0;
+    animation: identifier 1s forwards;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(6, 16.6%);
+    box-shadow: 3px 3px 1px 0px black;
+}
+
+@keyframes identifier {
+    from {
+        transform: translate(30rem, 20%) scaleX(0.5);
+        opacity: 0.4;
+    }
+    to {
+        transform: translate(30rem, 20%) scaleX(1.5);
+        opacity: 1;
+    }
+}
+
+.foter {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    /* bottom: 74PX; */
+    height: 32rem;
+    width: 6rem;
+    left: 17px;
+    border-radius: 23px 271px;
+    text-align: center;
+    background-color: var(--back-color);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* transform: translateY(-36rem); */
+    /* top: 10px; */
+    margin: 0px;
+    transform: scaleX(0) translate(-18px, 29px);
+}
+
+.foter.foter.visible {
+    transform: scaleX(1) translate(-18px, 29px);
+}
+
+.find {
+    position: sticky;
+    left: 17px;
+    border-radius: 116px 23px;
+    text-align: center;
+    background-color: var(--back-color);
+    /* transform: translateY(-36rem); */
+    top: 10px;
+    height: 24px;
+    width: 32px;
+    top: 5px;
+    transform: translateY(16px);
+}
+
+.cover {
+    width: 47%;
+}
+
+.foter a {
+    position: relative;
+}
+
+::selection {
+    background-color: #ededed;
+    color: black;
+}
+
+
+/* Original CSS rules here */
+
+@media screen and (max-width: 768px) {
+    /* Apply rules for screens smaller than 768 pixels in width */
+    header {
+        /* Modify properties for the header element in the media query */
+        height: 3rem;
+    }
+    section {
+        /* Modify properties for the section element in the media query */
+        height: 20rem;
+        width: 90%;
+    }
+    /* Continue modifying properties for other elements as needed */
+}
+
+@media screen and (max-width: 480px) {
+    /* Apply rules for screens smaller than 480 pixels in width */
+    header {
+        /* Modify properties for the header element in the media query */
+        height: 2rem;
+    }
+    section {
+        /* Modify properties for the section element in the media query */
+        height: 15rem;
+        width: 90%;
+    }
+    /* Continue modifying properties for other elements as needed */
+}
