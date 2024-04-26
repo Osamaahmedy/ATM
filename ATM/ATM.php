@@ -1,17 +1,18 @@
+/*start php file*/
 <?php
-
+/* start create connect with server and database*/
 $host = '127.0.0.1';
-$port = 4306;
-$dbusername = 'root';
-$dbpassword = 'root';
-$dbname = 'contact_db';
-
+$port = 4306;/**/
+$dbusername = 'root';/*name of server*/
+$dbpassword = 'root';/*password of server*/
+$dbname = 'contact_db';/*name of database*/
+/*create varibale to connect*/
 $conn = mysqli_connect($host, $dbusername, $dbpassword, $dbname, $port);
-
+/*create varibale to API message*/
 $message = [];
 
- 
-
+ /* end create connect with server and database*/
+/*start order file*/
 // form tr
 if(isset($_POST['submittr'])) {
     
@@ -49,6 +50,8 @@ if(isset($_POST['submittr'])) {
         
     
     }
+/*end order file*/
+/* Start Deposit file*/
 // form ds
 if(isset($_POST['submitds'])){
 
@@ -86,7 +89,9 @@ if(isset($_POST['submitds'])){
     $message['formds'][] = 'User does not exist in the database';
 }
 }
+/* end  Deposit file*/
 
+/* Start Withdrawal file*/
 // form aw
 if (isset($_POST['submitaw'])) {
     $nameaw = mysqli_real_escape_string($conn, $_POST['nameaw']);
@@ -132,9 +137,11 @@ if (isset($_POST['submitaw'])) {
         $message['formaw'][] = 'User does not exist in the database';
     }
 }
+ /* end Withdrawal file*/
 #if asve
+ /* end php file*/
 ?>
-
+/*Start html file*/
 <!DOCTYPE html>
 <html lang="en">
 
