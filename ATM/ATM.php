@@ -153,7 +153,7 @@ if (isset($_POST['submitaw'])) {
 </head>
 
 <body>
-  
+  /* some edit with css*/
   <style>
     section{
         height: 29rem;
@@ -301,6 +301,7 @@ if (isset($_POST['submitaw'])) {
 
   </style>
 <header ID ="heder" class="heder">
+ /* hedar section*/
         <h3>ATM</h3>
         <a href="">home</a>
         <a href="#about">ABOUT</a>
@@ -309,6 +310,7 @@ if (isset($_POST['submitaw'])) {
         <a href="#desposit">desposit</a>
         <a href="#withdraw">withdraw</a>
     </header>
+ /*end hedar section*/
     <div class="find"><div class="tes">
         <a href="#heder">home</a>
         
